@@ -1,4 +1,4 @@
-# PriceCalculator
+# Price Calculator
 
 ## Ongoing Passion Project 
 - Made to help calculate the total price customers will pay for products sold at art markets
