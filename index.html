@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Carrie's Art Market Calculator</title>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <script src="JS/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Carrie's Art Market Calculator</h1>
+  </header>
+
+  <main class="main-content">
+    <h2>Item Inventory</h2>
+    <form name="inventory_form" action="#" method="POST">
+      <fieldset>
+        <label class="item" for="in_inventory">Items:</label>
+        <select name="inventory_form" id="in_inventory">
+          <option>CHOOSE ONE</option>
+          <option value="keychain">Keychain</option>
+          <option value="sticker">Sticker</option>
+          <option value="print">Prints</option>
+          <option value="card">Greeting Cards</option>
+        </select>
+        <input id="add" type="button" value="Add">
+        <input id="remove" type="button" value="Remove">
+      </fieldset>
+      <div class="image-container">
+        <div>
+          <img id="pic1" src="Images/keychains.jpg" width="250" alt="picture of keychains">
+          <h3 id="keychain-price">Keychain Price: $10</h3>
+        </div>
+        <div>
+          <img id="pic2" src="Images/stickers.jpeg" width="250" alt="picture of stickers">
+          <h3 id="sticker-price">Sticker Price: $3</h3>
+        </div>
+        <div>
+          <img id="pic3" src="Images/prints.JPG" width="250" alt="picture of prints">
+          <h3 id="print-price">Print Price: $4</h3>
+        </div>
+        <div>
+          <img id="pic4" src="Images/cards.jpg" width="250" alt="picture of greeting cards">
+          <h3 id="card-price">Greeting Card Price: $5</h3>
+        </div>
+      </div>
+    </form>
+
+    <div class="submit-btn">
+      <button type="button" id="submit">Submit</button>
+    </div>
+
+
+    <div id="thanks-section">
+      <h1>The Total Amount You Owe Is: <span id="amount"></span>
+      </h1>
+      <h3 id="thank-msg">Thank you for supporting my small business!</h3>
+    </div>
+
+    <div class="refresh-btn">
+      <button type="button" id="refresh-btn">Refresh</button>
+    </div>
+
+  </main>
+
+</body>
+
+</html>
